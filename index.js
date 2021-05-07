@@ -10,6 +10,10 @@ app.listen(port, () => {
     findAppointment();
 });
 
+app.get('/', (req, res) => {
+    res.send('Checking vaccine appointments...');
+});
+
 function sendAlert(appointment, centerName) {
     let mailOptions = {
         from: 'vaccineupdateforrupesh@gmail.com',

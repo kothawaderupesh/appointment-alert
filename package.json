@@ -18,11 +18,8 @@
   },
   "homepage": "https://github.com/kothawaderupesh/appointment-alert#readme",
   "dependencies": {
-    "axois": "0.0.1-security",
     "express": "^4.17.1",
-    "nodemailer": "^6.6.0"
-  },
-  "devDependencies": {
+    "nodemailer": "^6.6.0",
     "axios": "^0.21.1"
   }
 }
