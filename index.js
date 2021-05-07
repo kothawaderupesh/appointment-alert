@@ -13,7 +13,7 @@ app.listen(port, () => {
 function sendAlert(appointment, centerName) {
     let mailOptions = {
         from: 'vaccineupdateforrupesh@gmail.com',
-        to: 'vaccineupdateforrupesh@gmail.com',
+        to: 'vaccineupdateforrupesh@gmail.com;rupesh.kothawade33@gmail.com;tyagamayeebhadra@gmail.com',
         subject: appointment.available_capacity + ' Appointment(s) available in ' + centerName + ' on ' + appointment.date,
         text: appointment
     };
