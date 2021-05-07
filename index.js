@@ -1,12 +1,11 @@
 const express = require('express');
 const app = express();
-const port = 3000;
 var nodemailer = require('nodemailer');
 const nashik_district_id = 389;
 const pune_district_id = 363;
 const axios = require('axios');
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 5000, () => {
     findAppointment();
 });
 
