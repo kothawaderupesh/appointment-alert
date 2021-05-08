@@ -44,7 +44,8 @@ function parseResponse(response) {
                     if (appointment.available_capacity > 0 && center.district_name === 'Nashik'
                         && center.pincode.toString().startsWith("422")) {
                         sendAlert(appointment, center, to_nashik);
-                    } else if (appointment.available_capacity > 0 && center.district_name === 'Pune'
+                    } else if (appointment.min_age_limit === 18 & appointment.available_capacity > 0
+                        && center.district_name === 'Pune'
                         && center.pincode.toString().startsWith("411")) {
                         sendAlert(appointment, center, to_pune);
                     }
