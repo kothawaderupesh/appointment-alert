@@ -59,7 +59,7 @@ function parseResponse(response) {
 const findAppointment = () => {
     sendApiCall(pune_district_id);
     sendApiCall(nashik_district_id);
-    setTimeout(findAppointment, 30000);
+    setTimeout(findAppointment, 10000);
 }
 
 const sendApiCall = (district_id) => {
