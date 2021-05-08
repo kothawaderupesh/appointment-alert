@@ -19,7 +19,7 @@ function sendAlert(appointment, center, to) {
     let mailOptions = {
         from: "vaccineupdateforrupesh@gmail.com",
         to: to,
-        subject: appointment.available_capacity + " Appointment(s) available in " + center.district_name + " " + center.name + " on " + appointment.date,
+        subject: appointment.available_capacity + " Appointment(s) available for " + appointment.min_age_limit +"+ in " + center.district_name + " " + center.name + " on " + appointment.date,
         text: center.json
     };
     transporter.sendMail(mailOptions, function (error, info) {
